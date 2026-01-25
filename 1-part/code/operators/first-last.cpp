@@ -6,5 +6,6 @@ int main()
   string first_name;
   string last_name;
   cin >> first_name >> last_name;
+  // simple_error("get a simple error");
   cout << "Hello, " << first_name << " " << last_name;
 }
