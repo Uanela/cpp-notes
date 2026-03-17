@@ -99,3 +99,21 @@ catch (runtime_error& e) { // this means pass by reference
 - `cerr` probably means character error (I wrote before read)
 - if we pass `catch(runtime_error& e)` it won't deal with `out_of_range` so we can pass instead `expection` to deal with all kind of expection. or pass an unknown express with `catch (...)`
 - in `std_lib_facilities.h` (custom file) there is `narrow_cast<type>(val)` that throws an error if the value will fit or not
+
+# 6. Writing a Program
+
+- It all starts with a problem, thinking about the problem, stages
+
+- You can instaciate a class like:
+
+```c
+class Token {
+    public:
+        char kind;
+        double value;
+    private:
+        // accessible only here
+}
+
+Token t = Token{kind, value}
+```
